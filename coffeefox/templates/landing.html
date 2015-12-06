@@ -49,18 +49,18 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<div class="container">
 			<div class="navbar-header">
 			  <!--<a class="navbar-brand" href="index.html">CoffeeFox <span>A foxy fox</span></a>-->
-			  <a class="navbar-brand" href="index.html">CoffeeFox</a>
+			  <a class="navbar-brand" href="index.html"><img src="{% static 'images/nicefox.png' %}" alt=""/><span> CoffeeFox</span></a>
 			</div>
 			<div class="top-nav">
 				<nav class="top-nav-bottom cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 					 <h3>Menu</h3>
 						<a href="index.html">Home</a>
-						<a href="about.html">About us</a>
-						<a href="gallery.html">Gallery</a>
-						<a href="codes.html">Short Codes</a>
+						<a href="about.html">Cafés</a>
+						<a href="gallery.html">Submit</a>
+						<!--<a href="codes.html">Short Codes</a>-->
 						<a href="contact.html">Contact</a>
 						<div class="footer-top">
-							<p>&copy; 2015 Ice Berg. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+							<p>&copy; 2015 CoffeeFox | Design by <a href="http://w3layouts.com">W3layouts</a></p>
 						</div>
 						<ul class="social-icons social-icons-sub">
 							<li><a href="#" class="p"> </a></li>
@@ -104,9 +104,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="banner-info">
                 <form role="form" class="location-input">
                 <div class="input-group location-input">
-                   <input type="text" class="form-control" placeholder="Your city">
+                  <input type="text" class="form-control" placeholder="{% trans 'Your city' %}">
                    <span class="input-group-btn">
-                     <button class="btn btn-default" type="button"><i class="fa fa-coffee fa-2"></i></button>
+                     <button class="btn btn-default" type="button"><i class="fa fa-coffee fa-2x"></i></button>
                    </span>
                 </div>
                 </form>
