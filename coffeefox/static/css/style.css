@@ -28,7 +28,7 @@ html, body{
   width: 100%;
 }
 .header {
-	background:#314246;
+	background:#00515C;
     min-height: 90px;
     border-bottom: 1px solid #fff;
 }
@@ -40,7 +40,7 @@ form.navbar-form.navbar-right {
     font-family: 'Lato', sans-serif;
 }
 .form-control {
-  height: 30px !important;
+  /*height: 30px !important;*/
   padding: 5px 8px !important;
   font-size: 14px !important;
 }
@@ -63,17 +63,44 @@ form.navbar-form.navbar-right {
   width: 100%;
   margin: 0;
   overflow: hidden;
-  margin-top: 18em;
+  margin-top: 16em;
   text-align: center;
   z-index: 1;
 }
 .banner-info h1{
 	text-transform:capitalize;
-	font-size:6.5em;
+	font-size:6em;
 	color:#fff;
 	margin:0;
 	font-family: 'Comfortaa', cursive;
 }
+
+form.location-input{
+    margin-top: 3em;
+}
+
+form.location-input input,
+form.location-input button {
+    height: 4em;
+}
+
+form.location-input button {
+    background-color: #00515C;
+    border: none;
+}
+form.location-input button:hover {
+    background-color: #00515C;
+}
+
+form.location-input button i{
+    color: #FCFBB8;
+}
+
+form.location-input div.input-group {
+    width: 69%;
+    margin: 0 auto;
+}
+
 .banner-info p{
 	margin:1em auto 0;
 	color:#eee;
@@ -110,7 +137,7 @@ a.navbar-brand{
     padding: 35px 0 0;
     font-size: 3em;
     line-height: 20px;
-    color: #407F8E !important;
+    color: #FCFBB8 !important;
 }
 a.navbar-brand span{
 	color:#fff;
@@ -377,18 +404,18 @@ ul.social-icons li a.in:hover{
 	opacity: 0;
 }
 
-.ch-img-1 { 
+.ch-img-1 {
 	background-image: url(../images/2.jpg);
 }
 
-.ch-img-2 { 
+.ch-img-2 {
 	background-image: url(../images/3.jpg);
 }
 
-.ch-img-3 { 
+.ch-img-3 {
 	background-image: url(../images/4.jpg);
 }
-.ch-img-4 { 
+.ch-img-4 {
 	background-image: url(../images/5.jpg);
 }
 
@@ -401,8 +428,8 @@ ul.social-icons li a.in:hover{
 	padding: 60px 0 0 0;
 	height: 110px;
 	font-family: 'Open Sans', Arial, sans-serif;
-	text-shadow: 
-		0 0 1px #fff, 
+	text-shadow:
+		0 0 1px #fff,
 		0 1px 2px rgba(0,0,0,0.3);
 }
 
@@ -589,7 +616,7 @@ li.list-group-item1 {
 .label {
   font-weight: 300 !important;
   border-radius:4px;
-}  
+}
 .grid_5{
 	background:none;
 	padding:2em 0;
@@ -745,6 +772,10 @@ h2.typoh2{
 	.pagination {
 		margin: 20px 0 0px;
 	}
+    form.location-input div.input-group {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 @media (max-width: 320px){
 	.caption span {
@@ -1006,7 +1037,7 @@ h2.typoh2{
 	.contact-bottom iframe {
 		min-height: 300px;
 	}
-}	
+}
 @media (max-width:767px){
 	.navbar-header {
 		width: 50%;
@@ -1115,7 +1146,7 @@ h2.typoh2{
 		min-height: 200px;
 	}
 	.features-grid-right-text h4 {
-		padding: 2em 0 0;	
+		padding: 2em 0 0;
 	}
 	.features-grids {
 		padding: 0 0 3em;

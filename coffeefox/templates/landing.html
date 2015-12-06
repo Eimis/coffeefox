@@ -6,10 +6,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 {% load staticfiles %}
+{% load trans from i18n %}
 
 <html>
 <head>
-<title>Ice Berg a Travel Agency Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>CoffeeFox</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,6 +20,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
 <!-- Custom Theme files -->
 <link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
 <!-- menu -->
@@ -29,7 +32,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href='//fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 </head>
 
-<body class="cbp-spmenu-push" data-vide-bg="{% static 'video/srix' %}" data-vide-options="posterType: mp4,">
+<body class="cbp-spmenu-push" data-vide-bg="{% static 'images/coffeeshop.jpeg' %}" data-vide-options="posterType: jpeg,">
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/jquery.vide.js' %}"></script>
 <script>
@@ -45,7 +48,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<div class="header">
 		<div class="container">
 			<div class="navbar-header">
-			  <a class="navbar-brand" href="index.html">Ice Berg <span>A Cool Travel</span></a>
+			  <!--<a class="navbar-brand" href="index.html">CoffeeFox <span>A foxy fox</span></a>-->
+			  <a class="navbar-brand" href="index.html">CoffeeFox</a>
 			</div>
 			<div class="top-nav">
 				<nav class="top-nav-bottom cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
@@ -67,7 +71,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</nav>
 				<div class="main buttonset">
 						<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-                        <button id="showRightPush"><img src="{% static 'images/menu.png' %}" alt=""/></button>
+                        <button id="showRightPush"><img src="{% static 'images/menu_copy.png' %}" alt=""/></button>
 				</div>
 					<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
                     <script src="{% static 'js/classie.js' %}"></script>
@@ -98,10 +102,17 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	  <div class="box_1-top">
 		<div class="container">
 			<div class="banner-info">
-				<h1>Welcome To Ice Berg !</h1>
-				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-					consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-					labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <form role="form" class="location-input">
+                <div class="input-group location-input">
+                   <input type="text" class="form-control" placeholder="Your city">
+                   <span class="input-group-btn">
+                     <button class="btn btn-default" type="button"><i class="fa fa-coffee fa-2"></i></button>
+                   </span>
+                </div>
+                </form>
+                {% comment %}
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+                {% endcomment %}
 			</div>
 	  </div>
 	  </div>
