@@ -25,6 +25,10 @@
 .cbp-spmenu a:hover {
 	background:#6B2A00;
 }
+/*social icons:*/
+.cbp-spmenu ul a:hover {
+	background:none;
+}
 .cbp-spmenu a:active {
 	background: #407F8E;
 }

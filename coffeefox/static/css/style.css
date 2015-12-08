@@ -257,15 +257,15 @@ p.us{
 ul.social-icons li{
 	display:inline-block;
 }
+ul.social-icons img {
+    width: 2.5em;
+    padding: 2px;
+}
 ul.social-icons li a.p{
 	background:url(../images/img-sp.png) no-repeat -8px -15px;
 	display:block;
 	height:32px;
 	width:32px;
-}
-ul.social-icons li a.p:hover{
-	background:url(../images/img-sp.png) no-repeat -63px -15px;
-	display:block;
 }
 ul.social-icons li a.facebook{
 	background:url(../images/img-sp.png) no-repeat -8px -58px;
